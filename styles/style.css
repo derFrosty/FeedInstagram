@@ -118,3 +118,7 @@ div.slide{
   border: none;
   font-size: 13px;
 }
+
+.topnav input:focus { 
+  outline: none;
+}
