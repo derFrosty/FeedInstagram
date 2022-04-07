@@ -51,24 +51,53 @@ div.slide{
   width: 5%;
 }
 
-/* Add a black background color to the top navigation bar */
+/* CSS que afeta barra de navegação */
 .topnav {
   overflow: hidden;
   background-color: white;
-  max-height: 40px;
+  height: 40px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* CSS pertinente ao search-element dentro da barra de navegação */
+.topnav .search-element {
+  display: flex;
+  align-items: center;
+}
+
+/* CSS pertinente aos elementos especificos dentro do search-element */
+.topnav .search-element img {
+  height: 15px;
+  width: auto;
+}
+
+/* CSS pertinente aos elementos especificos dentro do search-element */
+.topnav .search-element input {
+  height: 100%;
+  width: 100px;
+  margin-left: 3px;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-  float: right;
-  display: block;
   color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 13px;
+}
+
+.topnav .download-btn:hover {
+  background-color: #ddd;
+}
+
+.topnav .download-btn {
+  color: white; 
+  background-color: black;
 }
 
 /* Change the color of links on hover */
@@ -83,27 +112,8 @@ div.slide{
   color: white;
 }
 
-/* Style the search box inside the navigation bar */
+/* CSS pertinente aos elementos de input dentro da barra de navegação */
 .topnav input[type=text] {
-  float: left;
-  padding: 6px;
   border: none;
-  margin-top: 8px;
-  margin-right: 16px;
-  font-size: 10px;
-}
-
-/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
-@media screen and (max-width: 600px) {
-  .topnav a, .topnav input[type=text] {
-    float: none;
-    display: block;
-    text-align: left;
-    width: 100%;
-    margin: 0;
-    padding: 14px;
-  }
-  .topnav input[type=text] {
-    border: 1px solid #ccc;
-  }
+  font-size: 13px;
 }
